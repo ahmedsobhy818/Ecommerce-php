@@ -1,0 +1,13 @@
+.fa-star , .fa-star-half-alt{
+    color: gold;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+stars-reviews{
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    
+}

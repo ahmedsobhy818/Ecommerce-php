@@ -1,0 +1,18 @@
+#Alternate default index page
+DirectoryIndex Index.html
+
+RewriteEngine On
+RewriteBase /ecommerce-php/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule (Products) Index.html [QSA,L]
+RewriteRule ^(ProductDetails.+)$ Index.html [QSA,L]
+RewriteRule ^(Products.+)$ Index.html [QSA,L]
+RewriteRule ^(SignUp) Index.html [QSA,L]
+RewriteRule ^(Login) Index.html [QSA,L]
+RewriteRule ^(Orders) Index.html [QSA,L]
+RewriteRule ^(Orders.+)$ Index.html [QSA,L]
+
+
+

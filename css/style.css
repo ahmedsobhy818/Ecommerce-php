@@ -1,0 +1,422 @@
+body {
+    min-height: 2000px
+
+}
+.bar{
+    background-color: #eee;
+    border-bottom:1px solid #e2e2e2;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    
+ 
+}
+.bar .cart , .bar .account{
+    float: right;
+    font-size: 30px;
+    line-height: 50px;
+    
+    color: blue;
+    cursor: pointer;
+    position: relative;
+    margin-right: 50px;
+}
+.bar i {
+    margin-right: 5px;
+}
+.bar .circle{
+    border-radius: 50%;
+    background-color: orange;
+    display: inline-block;
+line-height: 20px;
+font-size: 15px;
+color: green;
+height: 20px;
+width: 20px;
+text-align: center;
+position: absolute;
+bottom:0;
+right:-10px
+}
+.bar .cart:hover{
+    color: #aaa;
+}
+div.container{
+    overflow: hidden;
+}
+div.item{
+    float:left;
+   height: 700px;
+   position: relative;
+   cursor: pointer;
+   overflow: hidden;
+}
+div.list-item{
+    height: 400px;
+   position: relative;
+   cursor: pointer;
+   overflow: hidden;
+   margin-bottom: 20px;
+}
+div.item .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+    transform: translateY(-100%);
+    cursor: auto;
+}
+div.list-item .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+    transform: translateX(-100%);
+    cursor: auto;
+}
+div.item:hover{
+    border:2px solid green
+}
+div.list-item:hover{
+    border:2px solid green
+}
+div.item:hover .overlay{
+    opacity: 0.97;
+    transform: translateY(0);
+
+}
+div.list-item:hover .overlay{
+    opacity: 0.97;
+    transform: translateX(0);
+
+}
+div.item:hover .overlay div{
+    border: 3px solid white;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    font-weight: bold;
+    font-size: 20px;
+    left:25%;
+    cursor: pointer;
+}
+div.list-item:hover .overlay div{
+    border: 3px solid white;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 20%;
+    position: absolute;
+    font-weight: bold;
+    font-size: 20px;
+    left:25%;
+    cursor: pointer;
+
+}
+div.item:hover .overlay .cart{
+    top: calc(50% + 30px);
+}
+div.item:hover .overlay .product{
+    top: calc(50% - 70px);
+}
+div.list-item:hover .overlay .cart{
+    top: 45%;
+    left:20%
+}
+div.list-item:hover .overlay .product{
+    top: 45%;
+    left:calc(50% + 50px)
+}
+div.item img , div.list-item img{
+    height: 100%;
+    width: 100%;
+}
+
+div.item div {
+    text-align: center;
+}
+div.item>div:first-of-type{
+    height: 40%;
+}
+div.list-item>div:first-of-type{
+    height: 100%;
+    float: left;
+    width: calc(50% - 20px);
+    margin-left: 20px;
+}
+div.list-item>div:nth-of-type(2){
+    height: 100%;
+    float: right;
+    width: 50%;
+    padding: 20px;
+}
+
+div.item div.arabic, div.list-item div.arabic{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+
+div.item div.name,div.list-item div.name{
+    font-size: 40px;
+    font-weight: bold;
+}
+div.item div.prices
+{
+overflow: hidden;
+display: flex;
+justify-content: space-around;
+}
+div.list-item div.prices{
+    overflow: hidden;
+}
+div.item div.old-price{
+    
+    float: left;
+    color: orange;
+    font-size: 50px;
+    text-decoration: line-through;
+
+}
+div.list-item div.old-price{
+    float: left;
+    color: orange;
+    font-size: 30px;
+    margin-left: 20px;
+    text-decoration: line-through;
+
+}
+div.item div.price{
+    
+    float: left;
+    color: red;
+    font-size: 50px;
+
+}
+div.list-item div.price{
+    float: left;
+    color: red;
+    font-size: 30px;
+    
+}
+
+div.item div.NSold,div.list-item div.NSold{
+    color:blue;
+    font-size: 30px;
+}
+div.list-item>div:nth-of-type(2)>*{
+    text-align: left;
+    font-weight: bold;
+    margin: 10px auto;
+}
+div.control{
+    margin:30px ;
+    margin-top: 75px;;
+    overflow: hidden;
+}
+/*
+div.control select{
+    width:20%;
+    margin-right: 5%;
+    float :left
+}*/
+div.control div.cmb{
+    float:left;
+width:30%;
+margin-right:3%
+}
+/*
+div.control>div{
+    display: block;
+    margin: 20px auto;
+    
+    overflow: hidden;
+    clear: both;
+}
+*/
+div.pagerContainer{
+    margin-top: 50px;
+}
+div.pager{
+    display: flex;
+    justify-content: space-around;
+    
+}
+#alert{
+    width: 80%;
+    margin:10px auto
+}
+
+div.pager li{
+    cursor: pointer !important
+}
+
+div.CardsOrList{
+    margin-bottom: 30px;
+}
+div.CardsOrList i{
+    cursor: pointer;
+    margin-right: 10px;
+    color:#ccc;
+}
+div.CardsOrList i.active{
+    color:black;
+    font-size: 55px !important;
+
+}
+
+#productDetailsModal .modal-dialog
+{
+    max-width: 100% !important;
+    width: 90%;
+}
+
+#productDetailsModal .list-item{
+    height: 600px;
+}
+.CommentsContainer{
+    margin: 30px;
+}
+.CommentsContainer stars-reviews{
+    text-align: left;
+    margin: 20px ;
+    margin-left:72px
+}
+.CommentsContainer stars-reviews .fa-star{
+font-size: 20px;
+}
+/*
+.CommentsContainer .user-comment span:first-of-type{
+    font-weight: bold;
+    font-size:30px
+}
+.CommentsContainer .user-comment span:nth-of-type(2){
+    font-style: italic;    font-size:30px
+}
+*/
+#productDetailsModal .tab{
+    float :left;
+    margin:20px 1px;
+    background-color: #ccc;
+    color: #fff;
+    cursor: pointer;
+    min-width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+#productDetailsModal .tab.active{
+    background-color: #aaa;
+}
+
+#CartModal .modal-dialog
+{
+    max-width: 100% !important;
+    width: 90%;
+}
+
+#CartModal table img ,#CheckoutModal table img{
+    height: 100px;
+    width: 100px;
+}
+#CartModal table td, #CheckoutModal table td{
+    line-height: 100px;
+    text-align: left;
+}
+
+#CartModal .CartHeader , #CheckoutModal .CartHeader{
+    float:left;
+    
+}
+#CartModal .CartItem , #CheckoutModal .CartItem{
+    float: left;
+    
+}
+#CartModal span.label , #CheckoutModal span.label{
+    display: none;
+    font-weight: bold;
+}
+@media(max-width:1500px){
+    #CartModal .CartHeader , #CheckoutModal .CartHeader
+    {
+     display: none;
+    
+    }
+    #CartModal .CartItem , #CheckoutModal .CartItem
+    {
+        float: left;
+    
+    }
+    #CartModal span.label , #CheckoutModal span.label{
+        display: block;
+        margin-right: 10px;
+        clear: both;
+        float: left;
+        
+    }
+    
+}
+  .cart,.account{
+      position: relative;
+  }     
+.cart .cart-total,.account .account-details{
+    
+    position: absolute;
+background-color:cornsilk;
+left: -300px;
+width: 390px;
+transition: 0.5s all ease-in-out;
+z-index: 2;
+font-size: 15px;
+transform:translateY(-120%);
+
+}
+.account .account-details{
+    width:220px;
+    left:-150px;
+    transform:translateY(-400px);
+}
+.cart:hover .cart-total{
+    transform:translateY(0);
+    
+}
+.account:hover .account-details{
+    transform:translateY(0);
+}
+
+.cart .cart-total tr , .account .account-details tr{
+    height: 10px;
+text-align: center;
+}
+label.error{
+    color:red
+}
+#SignUpModal .modal-dialog{
+    max-width: 100% !important;
+    width: 60%;
+}
+#CheckoutModal .modal-dialog{
+    max-width: 100% !important;
+    width: 90%;
+}
+
+#OrdersModal .modal-dialog
+{
+     max-width: 100% !important;
+    width: 90%;
+}
+
